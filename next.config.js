@@ -3,6 +3,7 @@
 const path = require('path');
 const withLess = require('next-with-less');
 const withTM = require('next-transpile-modules')([
+  'form-render',
   '@arco-design/web-react',
   '@arco-themes/react-arco-pro',
 ]);
@@ -32,15 +33,15 @@ module.exports = withLess(
 
       return config;
     },
-    async redirects() {
-      return [
-        {
-          source: '/',
-          destination: '/sunmaoUI',
-          permanent: true,
-        },
-      ];
-    },
+    // async redirects() {
+    //   return [
+    //     {
+    //       source: '/',
+    //       destination: '/sunmaoUI',
+    //       permanent: true,
+    //     },
+    //   ];
+    // },
     pageExtensions: ['tsx'],
   })
 );

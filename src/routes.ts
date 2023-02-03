@@ -16,7 +16,7 @@ export const routes: IRoute[] = [
     name: 'sunmaoUI',
     key: 'sunmaoUI',
     breadcrumb: false,
-  }
+  },
 ];
 
 export const getName = (path: string, routes) => {

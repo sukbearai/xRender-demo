@@ -26,7 +26,7 @@ interface RenderConfig {
   arcoTheme?: string;
 }
 
-const clientRoutes = ['LoginPage', 'SunmaoEditor'];
+const clientRoutes = ['LoginPage', 'SunmaoEditor', 'HomePage'];
 
 export default function MyApp({
   pageProps,
